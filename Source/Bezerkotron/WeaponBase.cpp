@@ -12,7 +12,7 @@ UWeaponBase::UWeaponBase()
 	bWantsBeginPlay = true;
 	PrimaryComponentTick.bCanEverTick = true;
 
-	// ...
+	isFiring = false;
 }
 
 

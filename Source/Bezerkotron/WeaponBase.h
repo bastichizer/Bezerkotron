@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "Components/ActorComponent.h"
+#include "Components/SceneComponent.h"
 #include "WeaponBase.generated.h"
 
 
@@ -16,7 +16,7 @@ enum class EWeaponType : uint8
 };
 
 UCLASS( Blueprintable, BlueprintType, ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
-class BEZERKOTRON_API UWeaponBase : public UActorComponent
+class BEZERKOTRON_API UWeaponBase : public USceneComponent
 {
 	GENERATED_BODY()
 
@@ -36,4 +36,10 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Damage)
 	EWeaponType weaponType;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Update)
+	bool isFiring;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Parent)
+	AActor* parent;
 };
