@@ -1,0 +1,16 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{8D65DD2A-45BD-E172-C780-1EA63CA80BA6}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "Bezerkotron",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	]
+}
